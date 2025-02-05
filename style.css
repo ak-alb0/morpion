@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Outfit;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     background-color: #1A2A33;
     padding: 100px 20px;
 }
@@ -17,7 +22,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 .partie1 {
@@ -26,16 +31,50 @@ main {
     border-radius: 15px;
 }
 
+.partie1 h1 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #A8BFC9;
+    padding-bottom: 20px;
+}
+
+.partie1 p {
+    text-align: center;
+    color: #A8BFC9;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
 .choisir {
+    display: flex;
+    flex-direction: row;
     background-color: #1A2A33;
     padding: 10px;
     border-radius: 10px;
 }
 
 .choisir button {
-    width: 50%;
     background-color: #1A2A33;
     border: none;
+}
+
+.choisir button {
+    width: 50%;
+    padding: 15px;
+}
+
+.choisir .rond {
+    background-color: #A8BFC9;
+    border-radius: 10px;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .button {
